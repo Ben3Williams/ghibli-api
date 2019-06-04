@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 350px;
+}
+
+.card {
+    margin: 1rem;
+    border: 1px solid gray;
+    background: cornsilk;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 0 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 0 1 calc(33% - 2rem);
+    }
+}
+
+.card:nth-child(even) {
+    background: aliceblue;
+}
