@@ -24,6 +24,10 @@
     background: cornsilk;
 }
 
+.card:nth-child(even) {
+    background: aliceblue;
+}
+
 @media screen and (min-width: 600px) {
     .card {
         flex: 0 1 calc(50% - 2rem);
@@ -34,8 +38,4 @@
     .card {
         flex: 0 1 calc(33% - 2rem);
     }
-}
-
-.card:nth-child(even) {
-    background: aliceblue;
 }
